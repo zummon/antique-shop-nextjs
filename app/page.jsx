@@ -1,16 +1,9 @@
-import Product from '../components/Product';
-import products from '../lib/products.json';
-import Head from 'next/head';
+import Product from "../lib/Product";
+import products from "../lib/products.json";
+import Head from "next/head";
+import { sitename } from "./layout";
 
-export async function getStaticProps() {
-  return {
-    props: {
-      
-    },
-  };
-}
-
-export default function IndexPage({sitename}) {
+export default function ({}) {
   return (
     <>
       <Head>

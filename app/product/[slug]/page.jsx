@@ -1,30 +1,23 @@
-import products from '../../lib/products.json';
-import Head from 'next/head';
+import products from "../../lib/products.json";
+import Head from "next/head";
+import { sitename } from "../../layout";
 
-export function getStaticPaths() {
-  return {
-    paths: products.map(({ slug }) => ({
-      params: { slug },
-    })),
-    fallback: false,
-  };
+export async function generateStaticParams() {
+  return products.map((service) => ({
+    slug: service.slug,
+  }));
 }
 
-export async function getStaticProps({ params }) {
+export default function ({ params }) {
   let product = products.find(({ slug }) => slug === params.slug);
+  let { description, image, price, title } = product;
 
-  return {
-    props: {
-      ...product,
-    },
-  };
-}
-
-export default function ProductSlugPage({ description, image, price, title, sitename }) {
   return (
     <>
-          <Head>
-          <title>{title} - {sitename}</title>
+      <Head>
+        <title>
+          {title} - {sitename}
+        </title>
         <meta property="og:title" content={`${title} - ${sitename}`} />
         <meta name="twitter:title" content={`${title} - ${sitename}`} />
         <meta name="description" content={description} />

@@ -1,17 +1,11 @@
-import Product from '../../components/Product';
-import products from '../../lib/products.json';
-import Head from 'next/head';
+import Product from "../../lib/Product";
+import products from "../../lib/products.json";
+import Head from "next/head";
+import { sitename } from "../layout";
 
-export async function getStaticProps() {
-  return {
-    props: {
-      title: 'Product',
-    },
-  };
-}
-
-export default function ProductIndexPage({ title, sitename }) {
+export default function ({}) {
   let categories = [...new Set(products.map(({ category }) => category))];
+  let title = "Product";
 
   return (
     <>

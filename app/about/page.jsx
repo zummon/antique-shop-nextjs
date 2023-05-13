@@ -1,20 +1,16 @@
-import Product from '../components/Product';
-import products from '../lib/products.json';
-import Head from 'next/head';
+import Product from "../lib/Product";
+import products from "../lib/products.json";
+import Head from "next/head";
+import { sitename } from "../layout";
 
-export async function getStaticProps() {
-  return {
-    props: {
-      title: 'About',
-    },
-  };
-}
-
-export default function AboutPage({ title ,sitename }) {
+export default function ({}) {
+  let title = "About";
   return (
     <>
       <Head>
-        <title>{title} - {sitename}</title>
+        <title>
+          {title} - {sitename}
+        </title>
         <meta property="og:title" content={`${title} - ${sitename}`} />
         <meta name="twitter:title" content={`${title} - ${sitename}`} />
       </Head>

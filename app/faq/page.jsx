@@ -1,18 +1,14 @@
-import Head from 'next/head';
+import Head from "next/head";
+import { sitename } from "../layout";
 
-export async function getStaticProps() {
-  return {
-    props: {
-      title: 'Frequently Asked Questions',
-    },
-  };
-}
-
-export default function FaqPage({ title,sitename }) {
+export default function ({}) {
+  let title = "Frequently Asked Questions";
   return (
     <>
       <Head>
-        <title>{title} - {sitename}</title>
+        <title>
+          {title} - {sitename}
+        </title>
         <meta property="og:title" content={`${title} - ${sitename}`} />
         <meta name="twitter:title" content={`${title} - ${sitename}`} />
       </Head>
