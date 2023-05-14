@@ -1,4 +1,5 @@
-import products from "../../lib/products.json";
+"use client";
+import products from "../../../lib/products.json";
 import Head from "next/head";
 import { sitename } from "../../layout";
 

@@ -1,3 +1,4 @@
+"use client";
 import Product from "../../lib/Product";
 import products from "../../lib/products.json";
 import Head from "next/head";

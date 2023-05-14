@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Script from "next/script";
 import "@fontsource/sacramento";
@@ -10,7 +10,7 @@ import "uikit/dist/css/uikit.min.css";
 export const sitename = "Antique Shop";
 
 export default function ({ children }) {
-  const { pathname } = useRouter();
+  const pathname = usePathname();
 
   return (
     <html>

@@ -1,5 +1,6 @@
-import Product from "../lib/Product";
-import products from "../lib/products.json";
+"use client";
+import Product from "../../lib/Product";
+import products from "../../lib/products.json";
 import Head from "next/head";
 import { sitename } from "../layout";
 
