@@ -1,9 +1,7 @@
 ### [Demo](https://liywg7-3000.csb.app/)
 
-- Change the site name in `./pages/_app.jsx`
-- Change the site background in `./pages/_document.jsx`
-- Change the custom font in `./styles/global.css`, `./components/Header.jsx`, and `./components/Footer.jsx`
-- Modify your data in `./lib/products.json` to add, edit and remove the site pages.
+- Change the site name, the site background, and the custom font in `./app/layout.jsx`
+- Modify your data in `./lib/products.json` to add, edit, and remove the site pages.
 
 Something breaks, needs upgrade. Let me know.
 
