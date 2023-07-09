@@ -59,14 +59,12 @@ export default function ({ children }) {
 
           {/* Footer */}
           <div className="uk-text-center uk-margin-large-top uk-margin-large-bottom">
-            <a
-              className="uk-link-reset uk-text-large"
-              href="https://zummon.page/"
-              target="_blank"
+            <span
+              className="uk-text-muted uk-text-large"
               style={{ fontFamily: "'Sacramento', cursive" }}
             >
-              Made by zummon
-            </a>
+              Made by zummon (Teerapat Anantarattanachai)
+            </span>
           </div>
         </div>
         <div className="uk-padding uk-visible@s"></div>

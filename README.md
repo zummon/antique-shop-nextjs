@@ -1,4 +1,4 @@
-### [Demo](https://liywg7-3000.csb.app/)
+### [Codesandbox](https://codesandbox.io/p/github/zummon/antique-shop-nextjs)
 
 - Change the site name, the site background, and the custom font in `./app/layout.jsx`
 - Modify your data in `./lib/products.json` to add, edit, and remove the site pages.
